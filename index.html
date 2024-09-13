@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: #ffcccb; /* Màu nền hồng nhạt */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: white;
+            font-size: 80px;
+            padding: 20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #ff4081, #ff80ab);
+            border-radius: 20px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7), 
+                             0 0 20px rgba(255, 64, 129, 0.6),
+                             0 0 30px rgba(255, 64, 129, 0.6);
+            }
+            to {
+                text-shadow: 3px 3px 20px rgba(255, 255, 255, 1), 
+                             0 0 30px rgba(255, 64, 129, 1),
+                             0 0 40px rgba(255, 64, 129, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>
